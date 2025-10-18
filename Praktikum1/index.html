@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manajemen Tugas Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Manajemen Tugas Kuliah</h1>
+            <p>Tugas numpuk bikin panik? Jadikan jadwalmu rapih dengan ini.</p>
+        </header>
+
+        <main>
+            <div class="form-container card">
+                <h2>Tambah Tugas Baru</h2>
+                <form id="task-form">
+                    <div class="form-group">
+                        <label for="nama-tugas">Nama Tugas</label>
+                        <input type="text" id="nama-tugas" placeholder="Contoh: Membuat Laporan Praktikum" required>
+                        <span class="error-message" id="nama-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="mata-kuliah">Mata Kuliah</label>
+                        <input type="text" id="mata-kuliah" placeholder="Contoh: Pemrograman Web" required>
+                        <span class="error-message" id="matkul-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="deadline">Deadline</label>
+                        <input type="date" id="deadline" required>
+                        <span class="error-message" id="deadline-error"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Tambah Tugas</button>
+                </form>
+            </div>
+
+            <div class="tasks-section">
+                <div class="tasks-header">
+                    <h2>Daftar Tugas (<span id="task-count">0</span> belum selesai)</h2>
+                    <div class="controls">
+                        <input type="text" id="search-input" placeholder="Cari tugas atau matkul">
+                        <div class="filter-buttons">
+                            <button class="btn active" data-filter="all">Semua</button>
+                            <button class="btn" data-filter="belum selesai">Belum Selesai</button>
+                            <button class="btn" data-filter="selesai">Selesai</button>
+                        </div>
+                    </div>
+                </div>
+                <ul id="task-list" class="task-list">
+                    </ul>
+            </div>
+        </main>
+    </div>
+
+    <div id="edit-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Edit Tugas</h2>
+            <form id="edit-form">
+                <input type="hidden" id="edit-task-id">
+                <div class="form-group">
+                    <label for="edit-nama-tugas">Nama Tugas</label>
+                    <input type="text" id="edit-nama-tugas" required>
+                </div>
+                <div class="form-group">
+                    <label for="edit-mata-kuliah">Mata Kuliah</label>
+                    <input type="text" id="edit-mata-kuliah" required>
+                </div>
+                <div class="form-group">
+                    <label for="edit-deadline">Deadline</label>
+                    <input type="date" id="edit-deadline" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
+            </form>
+        </div>
+    </div>
+    
+    <div id="toast" class=""></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
