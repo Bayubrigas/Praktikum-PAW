@@ -44,3 +44,14 @@ Dokumentasi singkat mengenai logika inti yang digunakan dalam aplikasi.
     <li>Mekanisme: Jika salah satu aturan di atas tidak terpenuhi saat pengguna menekan tombol "Tambah Tugas", proses akan dibatalkan. Pesan error yang informatif akan ditampilkan tepat di bawah kolom input yang salah untuk memandu pengguna.</li>
   </ul>
 </ol>
+
+<h2>Screenshot Fitur</h2>
+<img width="1421" height="930" alt="image" src="https://github.com/user-attachments/assets/0a347f36-b476-44b8-a32e-e7ed58a7ea05" />
+<img width="1402" height="389" alt="image" src="https://github.com/user-attachments/assets/3f068045-b645-43e9-9154-2254b79586a9" />
+<img width="1396" height="246" alt="image" src="https://github.com/user-attachments/assets/1d053987-f419-4f03-8a15-8992a665a356" />
+<img width="1403" height="259" alt="image" src="https://github.com/user-attachments/assets/b2f90aa7-ff7c-4876-bcd8-26460cb875d9" />
+<img width="1391" height="169" alt="image" src="https://github.com/user-attachments/assets/68adda8c-d474-4fc0-83e9-7c060baed764" />
+
+
+
+
