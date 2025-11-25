@@ -52,3 +52,10 @@ Semua catatan disimpan sebagai array objek:
 
 ```js
 localStorage.setItem("notes", JSON.stringify(notes));
+
+### ✔ 2. Validasi Input
+Judul tidak boleh kosong
+
+Isi catatan tidak boleh kosong
+
+Jika salah satu kosong, aplikasi akan menampilkan pesan kesalahan di form modal.
